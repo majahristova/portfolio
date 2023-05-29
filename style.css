@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: rgba(241, 234, 225, 0.785);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+}
+.container {
+  background-color: white;
+  width: 73vw;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 51px;
+}
+
+.grid_container_landing_page {
+  width: 62vw;
+  height: 62vh;
+  display: grid;
+  row-gap: 15px;
+  column-gap: 15px;
+  grid-template-columns: 50% 10% 10% 30%;
+  grid-template-rows: 50% 25% 25%;
+  margin-right: 20px;
+}
+
+.grid_box_one {
+  background-color: white;
+  grid-column: 1/2;
+  grid-row: 1/1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+.grid_box_one img {
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.grid_box_one_information_box {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid_box_two {
+  grid-column: 3/5;
+  grid-row: 1/1;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 30px;
+  background: url("./images/MAja-1.jpg") no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+.grid_box_three {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.grid_box_three_information_box {
+  width: 27vw;
+  height: 32vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid_box_three img {
+  width: 38px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.grid_box_four {
+  grid-column: 2/3;
+  grid-row: 2/2;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid_box_four img {
+  width: 50px;
+}
+
+.grid_box_five {
+  grid-column: 3/5;
+  grid-row: 2/2;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.grid_box_five_information_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 15vh;
+}
+.grid_box_five img {
+  width: 50px;
+}
+
+.grid_box_six {
+  grid-column: 2/4;
+  grid-row: 3/3;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.grid_box_six img {
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.grid_box_six_information_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 15vh;
+}
+
+.grid_box_seven {
+  grid-column: 4/5;
+  grid-row: 3/3;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.grid_box_seven img {
+  width: 25px;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+
+.grid_box_seven_information_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+  height: 15vh;
+}
+.grid_box_eight {
+  grid-row: 1/1;
+  grid-column: 2/3;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.grid_box_eight_information_box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 6vw;
+  height: 30vh;
+}
+.grid_box_eight_information_box p {
+  color: pink;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+
+
+/* Modal content */ 
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+
+
+
+
+/* Modal Content */
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 500px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
