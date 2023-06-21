@@ -1,24 +1,49 @@
-// Same variabels that re-used
+//JS for Modal
 
-const modal = document.getElementById("myModal");
-const closespan = document.getElementsByClassName("close")[0];
+const modal = document.getElementsByClassName("modal");
+const spans = document.getElementsByClassName("close");
 
-const modalcontent = document.getElementsByClassName("modalContent");
 
-closespan.addEventListener("click", () => {
-  modal.style.display = "none";
-});
+const containers = document.querySelectorAll(".grid_box");
 
-// containers for the differnent btn containers
-
-const containers = document.querySelectorAll(
-  ".grid_box_five_information_box , .grid_box_six_information_box"
-);
-
-containers.forEach((container, index) => {
-  container.addEventListener("click", () => {
-    modal.style.display = "block";
-    modalcontent.style.display = "block";
-
+containers.forEach((onClickContainer, index) => {
+  onClickContainer.addEventListener("click", () => {
+    modal[index].style.display = "block";
   });
+  spans[index].addEventListener("click", () => {
+    modal[index].style.display = "none";
+  });
+ 
 });
+
+
+//Darkmode with localstorage
+
+let darkmode = localStorage.getItem("darkMode");
+const darkModeBtn = document.querySelector('#dark-mode-btn');
+
+const turnOnDarkMode = () =>{
+  document.body.classList.add('darkmode');
+
+  localStorage.setItem('darkMode', 'enabled');
+
+}
+const disableDarkmode = () =>{
+  document.body.classList.remove('darkmode');
+
+  localStorage.setItem('darkMode', null);
+
+}
+
+
+darkModeBtn.addEventListener('click', ()=>{
+if (darkmode !== 'enabled'){
+  turnOnDarkMode();
+  console.log(darkmode)
+} else {
+  disableDarkmode();
+  console.log(darkmode)
+}
+})
+
+

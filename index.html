@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Maya Hristova</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/logo1-removebg-preview.png" />
   </head>
   <body>
+    <!-- <header>
+     <button class="dark_mode_toggle" id="dark-mode-btn">Lalalal</button>
+    </header> -->
     <main class="main">
       <div class="container">
         <div class="grid_container_landing_page">
           <div class="grid_box_one">
-            <img src="images/wave-right-svgrepo-com.svg" />
+            <img src="images/wave-hand-svgrepo-com.svg" />
             <div class="grid_box_one_information_box">
               <h1>Hi, my name is Maya Hristova</h1>
-              <h3>Ima an inspiring and ambitous Front-end developer</h3>
+              <h4>Ima an inspiring and ambitous Front-end developer</h4>
             </div>
           </div>
-          <div class="grid_box_two"></div>
+          <div class="grid_box_two">
+            <img src="./images/profileimage-new1.png" alt="portfolioimage" />
+          </div>
           <div class="grid_box_three">
-            <img src="/images/smile-circle-svgrepo-com.svg" />
+            <img src="/images/smiley-svgrepo-com.svg" />
             <div class="grid_box_three_information_box">
               <h1>About me</h1>
               <p>
@@ -35,11 +47,13 @@
             </div>
           </div>
           <div class="grid_box_four">
-            <img src="./images/linkedin-svgrepo-com.svg" alt="linkdin" />
+            <a href="https://www.linkedin.com/in/maya-h-4a5358213/"
+              ><img src="./images/linkedin-svgrepo-com.svg" alt="linkdin" />
+            </a>
           </div>
           <div class="grid_box_five">
-            <img src="./images/knowledge-svgrepo-com.svg" />
-            <div class="grid_box_five_information_box">
+            <img src="./images/book-opened-svgrepo-com (3).svg" />
+            <div class="grid_box_five_information_box grid_box">
               <p>Read about</p>
               <h3>My experince</h3>
             </div>
@@ -47,15 +61,50 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <div class="modalContent">
-                  <p>Hellooo</p>
+                <div class="modalContent_for_box_five">
+                  <div class="my_experince_div">
+                    <h5>2022-2024</h5>
+                    <h2>Grit Academy, Front-end developer</h2>
+                    <p>
+                      A 2 year Schoolprogram where i learn HTML, CSS,
+                      Javascript,Typescript,React, Anime.js as well as
+                      Firebase,Node.js / Backend
+                    </p>
+                  </div>
+                  <div class="my_experince_div">
+                    <h5>2022 January-May</h5>
+                    <h2>CoderDojo & Teacher Assistant</h2>
+                    <p>
+                      Worked with Teaching children coding at Coderdojo in
+                      Helsingborg. Worked as well as a Teacher Assistent at
+                      Helsingborg Komvux, i teached HTML & CSS, along side
+                      Dimitrij Aleshcov, the main teacher
+                    </p>
+                  </div>
+                  <div class="my_experince_div">
+                    <h5>2022 January-May</h5>
+                    <h2>Tech For women, Sundsgården Folkhögskola</h2>
+                    <p>
+                      Learned HTML, CSS ,SASS & Javascript, Github, as well as
+                      very basic React. This course was on distance, so i
+                      learned to work from home alone
+                    </p>
+                  </div>
+                  <div class="my_experince_div">
+                    <h5>2021</h5>
+                    <h2>Basic Programmering Course</h2>
+                    <p>
+                      Learning basic HTML,CSS, & JS. Learned to work
+                      individually and with teams
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="grid_box_six">
-            <img src="images/project-diagram-svgrepo-com.svg" />
-            <div class="grid_box_six_information_box">
+            <img src="images/shareoutline-svgrepo-com.svg" />
+            <div class="grid_box_six_information_box grid_box">
               <p>Read about</p>
               <h3>My projects</h3>
             </div>
@@ -63,22 +112,120 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <div class="modalContent">
-                  <p>MJAJA</p>
+                <div class="modalContent_for_box_six">
+                  <div class="project_container">
+                    <div class="project_mini_container_logo_and_image">
+                      <div class="img"></div>
+                      <img src="/images/github-142-svgrepo-com.svg" />
+                    </div>
+                    <div class="project_mini_container">
+                      <h3>Project 1</h3>
+                      <button>View project</button>
+                    </div>
+                  </div>
+                  <div class="project_container">
+                    <div class="project_mini_container_logo_and_image">
+                      <div class="img"></div>
+                      <img src="/images/github-142-svgrepo-com.svg" />
+                    </div>
+                    <div class="project_mini_container">
+                      <h3>Project 2</h3>
+                      <button>View project</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="grid_box_seven">
-            <img src="./images/comment-svgrepo-com.svg" />
-            <div class="grid_box_seven_information_box">
+            <img src="./images/code-1115-svgrepo-com.svg" />
+            <div class="grid_box_seven_information_box grid_box">
               <p>Read about</p>
-              <h3>What coding languages i know</h3>
+              <h3>Coding languages i know</h3>
+            </div>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modalContent_for_box_seven">
+                  <h2>
+                    A list of all the coding languages i know and currenlty am learning
+                  </h2>
+                  <div class="experince_box">
+                    <i class="border_box_style"></i>
+                    <p class="centered_text_in_experience_box">HTML</p>
+               
+                  </div>
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">CSS</p>
+                  </div>
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">Javascript</p>
+                  </div>
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">React</p>
+                  </div>
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">Node.js</p>
+                  </div>
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">Typescript</p>
+                  </div>
+
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">Anime.js</p>
+                  </div>
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">SASS</p>
+                  </div>
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">GIT</p>
+                  </div>
+                  <div class="experince_box">
+                    <p class="centered_text_in_experience_box">Firebase</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="grid_box_eight">
-            <div class="grid_box_eight_information_box">
+            <div class="grid_box_eight_information_box grid_box">
               <p>CONTACT ME</p>
+            </div>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modalContent_for_box_eight">
+                  <form
+                    action="https://formsubmit.co/maja.pau99@gmail.com"
+                    method="POST"
+                  >
+                    <p>Leave me a message!</p>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="messagge"
+                      class="textmessage"
+                      placeholder="Leave a messaage..."
+                    />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <button type="submit" class="formbtn">Send</button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
