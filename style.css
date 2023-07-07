@@ -405,15 +405,16 @@ header {
 .project_mini_container_logo_and_image {
   display: flex;
   justify-content: space-between;
+  width: 28vw;
+  height: 20vh;
+
+
 }
 
-.project_mini_container_logo_and_image img {
-  width: 40px;
-  height: 5vh;
-}
+
 
 .project_mini_container {
-  height: 13vh;
+  height: 15vh;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -421,7 +422,7 @@ header {
 
 .project_mini_container button {
   background-color: var(--clr-primary-);
-  width: 120px;
+  width: 110px;
   height: 40px;
   padding: 10px;
   border-radius: 5%;
@@ -430,12 +431,22 @@ header {
   font-weight: 900;
   color: var(--clr-secondary-);
 }
-.img {
-  background-color: var(--clr-primary-);
-  width: 18vw;
+.imagefolder {
+  width: 20vw;
   height: 20vh;
+
 }
 
+.project_mini_container p {
+  font-size: 10px;
+  color: var(--clr-secondary-);
+}
+
+.imagefolder img{
+width: 380px;
+height: 220px;
+  
+}
 /* Modal content for box seven */
 .modalContent_for_box_seven {
   width: 35vw;
@@ -702,16 +713,16 @@ form p {
   }
 
   .my_experince_div h5 {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: bolder;
   }
 
   .my_experince_div h2 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bolder;
   }
   .my_experince_div p {
-    font-size: 11px;
+    font-size: 9px;
     font-weight: bolder;
   }
 
@@ -728,11 +739,28 @@ form p {
   .project_mini_container_logo_and_image {
     width: 73vw;
     height: 18vh;
+ 
   }
-  .img {
+  .imagefolder img {
     width: 55vw;
     height: 18vh;
   }
+
+  .project_mini_container h3{
+   font-size: 12px;
+  }
+
+  .project_mini_container p{
+    font-size: 9px;
+   }
+   .project_mini_container button{
+    width: 90px; /* Adjusted width */
+    height: 30px; /* Adjusted height */
+    padding: 5px; /* Adjusted padding */
+    font-size: 8px;
+   }
+ 
+ 
 
   .modalContent_for_box_seven {
     width: 80vw;
